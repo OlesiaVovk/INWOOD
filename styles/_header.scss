@@ -1,0 +1,71 @@
+.header {
+    height: 1080px;
+    width: 100%;
+    background: url("../assets/images/header/Herosection.png") no-repeat;
+    background-size: cover;
+    border-radius: 0 0 62px 62px;
+}
+
+.topline {
+    display: flex;
+    justify-content: space-between;
+    padding: 26px 150px 26px 150px;
+    margin-bottom: 290px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    width: 606px;
+
+    &>div {
+        font-family: PlayfairDisplay;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 26.58px;
+        color: $color-white;
+    }
+}
+
+.mainSection {
+    display: flex;
+    flex-direction: column;
+    width: 668px;
+    height: 392px;
+    justify-content: space-between;
+    padding: 26px 150px;
+
+    h1,
+    h2 {
+        color: $color-secondary-lightbeige;
+    }
+
+    h1 {
+        font-family: PlayfairDisplay;
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 85.31px;
+        width: 668px;
+        text-align: left;
+    }
+
+    h2 {
+        font-family: OpenSans;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 32.68px;
+        width: 668px;
+        margin: 54px 0;
+        text-align: left;
+    }
+
+    button {
+        @include greenButton;
+        width: 230px;
+        height: 80px;
+        padding: 20px;
+        border: none;
+        font-size: 24px;
+        line-height: 32.68px;
+    }
+}

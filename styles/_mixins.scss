@@ -1,0 +1,46 @@
+@mixin titlesFont {
+  font-family: PlayfairDisplay;
+  font-weight: 700;
+  color: $color-primary-darkgreen;
+}
+
+@mixin subtitle {
+  @include titlesFont;
+  font-size: 64px;
+  line-height: 85.31px;
+}
+
+@mixin greenButton {
+  color: $color-secondary-lightbeige;
+  background: $color-primary-lightgreen;
+  border-radius: 10px;
+  border: none;
+  font-family: OpenSans;
+  font-weight: 700;
+  cursor: pointer;
+
+  &:hover {
+    color: $color-primary-darkgreen;
+    background-color: $color-secondary-lightbeige;
+  }
+
+  &:active {
+    color: $color-secondary-lightbeige;
+    background-color: $color-primary-darkgreen;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:disabled {
+    color: $color-button-prev-active;
+    background-color: $color-secondary-lightblue;
+    cursor: not-allowed;
+    &:hover {
+      color: $color-button-prev-active;
+      background-color: $color-secondary-lightblue;
+      cursor: not-allowed;
+    }
+  }
+}

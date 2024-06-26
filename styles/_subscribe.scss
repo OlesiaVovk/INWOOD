@@ -1,0 +1,62 @@
+.newsletter {
+    display: flex;
+}
+
+.image {
+    img {
+        background: url("../assets/images/subscribe/newsletterimage.png") no-repeat;
+        background-size: cover;
+        width: 50vw;
+    }
+}
+
+.form {
+    background: $color-subscribe-background;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 150px;
+
+    h2 {
+        @include subtitle;
+        font-weight: 400;
+        margin-bottom: 25px;
+
+        span {
+            font-weight: 700;
+        }
+    }
+}
+
+.newsletterText {
+    font-family: Roboto;
+    line-height: 28.13px;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.newsletterInput {
+    margin: 41px 0;
+    height: 60px;
+    width: 525px;
+    outline: none;
+    border: none;
+    background-color: $color-subscribe-background;
+    font-family: Roboto;
+    line-height: 28.13px;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.newsletterBtn {
+    @include greenButton;
+    width: 250px;
+    height: 68px;
+    border: none;
+    border-radius: 6px;
+    padding: 20px 24px;
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 24px;
+}

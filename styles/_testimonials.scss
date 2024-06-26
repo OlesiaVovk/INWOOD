@@ -1,0 +1,130 @@
+.testimonials {
+  height: 889px;
+  padding: 100px 150px 100px 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.testimonialsHeading {
+  text-align: center;
+
+  h2 {
+    @include subtitle;
+    margin-bottom: 32px;
+  }
+
+  h3 {
+    color: $color-primary-darkgreen;
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42.19px;
+  }
+}
+
+.testimonialsBlock {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.testimonialsText {
+  width: 55%;
+  color: $color-primary-darkgreen;
+  font-family: OpenSans;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 49.03px;
+  text-align: left;
+  margin-top: 50px;
+}
+
+.testimonialsPerson {
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28.13px;
+  margin-top: 65px;
+}
+
+.testimonialsPosition {
+  font-family: Roboto;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28.13px;
+}
+
+.testimonialsBtns {
+  display: flex;
+  flex-direction: column;
+  height: 104px;
+  justify-content: space-between;
+}
+
+// .slider {
+//   outline: 1px solid rgb(0, 55, 255);
+//   margin-left: 292px;
+//   overflow-x: hidden;
+//   width: 90vw;
+// }
+
+// .sliderList {
+//   outline: 3px solid red;
+// }
+
+// .sliderTrack {
+//   display: flex;
+//   // transform: translate3d(0px, 0px, 0px)
+// }
+
+// .popularbtnNext {
+//   background-color: $color-button-next;
+//   cursor: pointer;
+//   width: 40px;
+//   height: 40px;
+//   border-radius: 50%;
+//   border: none;
+//   margin-left: 24px;
+//   &:hover {
+//       background-color: $color-button-next-active;
+//     }
+  
+//     &:active {
+//       background-color: $color-button-next-active;
+//     }
+  
+//     &:focus {
+//       outline: none;
+//     }
+// }
+
+// .popularbtnPrev {
+//   background-color: $color-secondary-lightblue;
+//   cursor: pointer;
+//   width: 40px;
+//   height: 40px;
+//   border-radius: 50%;
+//   border: none;
+//   &:hover {
+//       background-color: $color-button-prev-active;
+//     }
+  
+//     &:active {
+//       background-color: $color-button-prev-active;
+//     }
+  
+//     &:focus {
+//       outline: none;
+//     }
+// img {
+//   transform: rotate(180deg);
+// }
+// }
+
+// .popularbtnPrev.disabled,
+// .popularbtnNext.disabled {
+// opacity: .25;
+// pointer-events: none;
+// }

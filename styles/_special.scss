@@ -1,0 +1,143 @@
+.specialPackage {
+  height: 1165px;
+  padding: 100px 150px 100px 150px;
+}
+
+h2 {
+  @include subtitle;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.specialCols {
+  height: 80%;
+  display: flex;
+}
+
+.special_leftCol,
+.special_rightCol,
+.specialBlock {
+  display: flex;
+  flex-direction: column;
+}
+
+.special_leftCol {
+  margin-right: 100px;
+}
+
+.special_rightCol {
+  min-width: 697px;
+}
+
+.specialProduct {
+  font-family: OpenSans;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 49px;
+  color: $color-primary-darkgreen;
+}
+
+.specialImageContainer {
+  position: relative;
+  max-width: 822px;
+}
+
+.specialZoomOut {
+  position: absolute;
+  bottom: 1px;
+  right: 1px;
+}
+
+.specialPrice {
+  font-family: OpenSans;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 32px;
+  color: $color-primary-darkgreen;
+}
+
+.special_description {
+  summary {
+    cursor: pointer;
+    display: block;
+    margin: 25px 0 40px 0;
+  }
+
+  details[open] summary {
+    .sign {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+.special_description__header {
+  font-family: OpenSans;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 27px;
+  color: $color-primary-darkgreen;
+}
+
+.special_description__text,
+.special_description__extra_text {
+  font-family: OpenSans;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+  color: $color-primary-darkgreen;
+  word-wrap: break-word;
+}
+
+.special_description__button {
+  font-family: OpenSans;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.special_product__cards {
+  height: 100%;
+}
+
+.special_product__card {
+  display: flex;
+  margin-bottom: 32px;
+}
+
+.special_product__image {
+  margin-right: 16px;
+}
+
+.special_product_card__description,
+.special_product_card__description__active {
+  min-width: 393px;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.special_product_card__description__active {
+  background-color: $color-secondary-mint;
+}
+
+.special_product_card__name {
+  display: flex;
+  justify-content: space-between;
+  font-family: OpenSans;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 29px;
+
+  span {
+    font-weight: 700;
+    line-height: 25px;
+  }
+}
+
+.special_product_card__link {
+  color: $color-primary-darkgreen;
+  font-family: OpenSans;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-decoration: underline;
+}

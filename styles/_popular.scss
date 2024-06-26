@@ -1,0 +1,171 @@
+%chair {
+  min-width: 430px;
+  width: 430px;
+  height: 585px;
+  border-radius: 16px;
+  padding: 60px 40px;
+  margin-right: 32px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.popular {
+  background: url("../assets/images/popular/popularChair.png") no-repeat left;
+  background-size: auto;
+  padding: 100px 0px 100px 0px;
+  height: 1153px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  h2 {
+    text-align: center;
+  }
+}
+
+.slider {
+  margin-left: 292px;
+  overflow-x: hidden;
+  width: 90vw;
+  outline: 1px solid red;
+}
+
+.sliderTrack {
+  display: flex;
+}
+
+.container {
+  align-items: left;
+  justify-content: space-between;
+  height: 131px;
+}
+
+.popularHeader {
+  color: $color-primary-lightgreen;
+  font-family: OpenSans;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.popularText {
+  color: $color-primary-lightgreen;
+  font-family: OpenSans;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24.51px;
+
+  span {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32.68px;
+  }
+}
+
+.armchair {
+  @extend %chair;
+  background-color: $color-secondary-mint;
+
+  img {
+    width: 204px;
+  }
+}
+
+.premiumSofa {
+  @extend %chair;
+  background-color: $color-secondary-lightblue;
+
+  img {
+    width: 248px;
+  }
+}
+
+.minimalSofa {
+  @extend %chair;
+  background-color: $color-secondary-lilac;
+
+  img {
+    width: 279px;
+  }
+}
+
+.diningChair {
+  @extend %chair;
+  background-color: $color-secondary-beige;
+
+  img {
+    width: 164px;
+  }
+}
+
+.sliderArrows {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 54px 0;
+  margin-right: 250px;
+}
+
+.popularbtnNext {
+  background-color: $color-button-next;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  margin-left: 24px;
+
+  &:hover {
+    background-color: $color-button-next-active;
+  }
+
+  &:active {
+    background-color: $color-button-next-active;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.popularbtnPrev {
+  background-color: $color-secondary-lightblue;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+
+  &:hover {
+    background-color: $color-button-prev-active;
+  }
+
+  &:active {
+    background-color: $color-button-prev-active;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  img {
+    transform: rotate(180deg);
+  }
+}
+
+.popularbtnPrev.disabled,
+.popularbtnNext.disabled {
+  opacity: 0.25;
+  pointer-events: none;
+}
+
+.popularBtn {
+  @include greenButton;
+  width: 265px;
+  height: 73px;
+  padding: 24px 20;
+}

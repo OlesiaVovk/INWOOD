@@ -1,0 +1,46 @@
+.benefitsContainer {
+  color: $color-primary-darkgreen;
+  background: $color-secondary-lightblue;
+  height: 695px;
+  max-width: 100%;
+  padding: 100px 150px 100px 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  @include subtitle;
+  margin-bottom: 104px;
+}
+
+.benefitsRows {
+  font-weight: 400;
+  height: 306px;
+  width: 1348px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.benefitsOneCol {
+  flex-direction: column;
+  text-align: center;
+  max-width: 350px;
+  img {
+    margin-bottom: 42px;
+  }
+}
+
+.benefitsHeader {
+  font-family: PlayfairDisplay;
+  font-weight: 700;
+  font-size: 36px;
+  margin-bottom: 42px;
+}
+
+.benefitsText {
+  font-family: OpenSans;
+  font-weight: 400;
+  font-size: 24px;
+}

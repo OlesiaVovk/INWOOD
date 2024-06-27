@@ -29,10 +29,38 @@
                 <button><a href="#explore">Shop Now</a></button>
             </div>
         </header>
-        <section>
+        <section class="explore">
+            <div class="explore_rows">
             <h2 id="explore">Explore by Category</h2>
+            <div class="explore_container">
+                <div class="explore_container_left">
+                    <div class="explore_search"><img src="assets/images/explore/search_icon.png" />
+                        <input type="search" placeholder="Search" />
+                    </div>
+                    <div id="parent" class="explore_scroll">
+                        <div id="categories"></div>
+                    </div>
+                    <button type="button" class="explore_left_button">All Categories<img
+                            src="assets/images/right_arrow.png" class="btnNext" /></button>
+                </div>
+                <div class="explore_container_right">
+                    <div class="explore_top">
+                        <div class="explore_opened">
+                            <h2 class="explore_opened_h2">Category Name</h2>
+                            <button class="explore_right_button">Explore</button>
+                        </div>
+                        <img src="assets/images/explore/explore_chair.png" />
+                    </div>
+                    <div class="explore_middle"><img src="assets/images/explore/explore_mirror.png"><img
+                            src="assets/images/explore/explore_chairs.png" /></div>
+                    <div class="explore_bottom"><img src="assets/images/explore/explore_sofa.png" /><img
+                            src="assets/images/explore/explore_guestroom.png" /></div>
+                </div>
+            </div>
+        </div>
         </section>
         <section class="popular">
+            <div class="popular_rows">
             <h2 id="products">Popular Products</h2>
             <div class="slider">
                 <div class="sliderList">
@@ -116,93 +144,104 @@
                     </div>
                 </div>
             </div>
-            <button type="button" class="popularBtn">Explore all items<img src="assets/images/popular/right_arrow.png"
+            <button type="button" class="popularBtn">Explore all items<img src="assets/images/right_arrow.png"
                     class="btnNext" /></button>
-        </section>
-        <section class="specialPackage">
-            <h2>Special Package</h2>
-            <div class="specialCols">
-                <div class="special_leftCol">
-                    <div class="specialImageContainer"><img src="assets/images/special/zoom_out.png"
-                            class="specialZoomOut" /><img src="assets/images/special/main_image.png"
-                            class="specialMainImg" /></div>
-                    <div class="specialBlock"><span class="specialProduct">Larkin Wood Full Set</span><span
-                            class="rating">star</span><span class="specialPrice">$729.99</span></div>
                 </div>
-                <div class="special_rightCol">
-                    <div class="special_description">
-                        <h5 class="special_description__header">Description</h5>
-                        <div class="special_description__text">Cast Aluminum Outdoor Chaise Lounge As an elegant and
-                            classic touch to your outdoor space,
-                            this cast Aluminum Chaise Lounge combines the appearance, function and quality all together,
-                            offering you with the best experience.</div>
-                        <details>
-                            <summary><span class="special_description__button">See More <img
-                                        src="assets/images/special/down_arrow.png" class="sign" /></span></summary>
-                            <p class="special_description__extra_text">Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-                                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                                mollit anim id est laborum.</p>
-                        </details>
+        </section>
+        <section class="special_package">
+            <div class="special_rows">
+                <h2>Special Package</h2>
+                <div class="special_cols">
+                    <div class="special_leftCol">
+                        <div class="specialImageContainer"><img src="assets/images/special/zoom_out.png"
+                                class="specialZoomOut" /><img src="assets/images/special/main_image.png"
+                                class="specialMainImg" /></div>
+                        <div class="specialBlock"><span class="specialProduct">Larkin Wood Full Set</span><span
+                                class="rating">star</span><span class="specialPrice">$729.99</span></div>
                     </div>
-                    <div class="special_product__cards">
-                        <div class="special_product__card">
-                            <img src="assets/images//special/image1.png" class="special_product__image" />
-                            <div class="special_product_card__description__active">
-                                <div class="special_product_card__name">Living Room Family Set<span>$229.99</span></div>
-                                <div class="special_product_card__rating">stars</div>
-                                <div class="special_product_card__link">See Details</div>
-                            </div>
+                    <div class="special_rightCol">
+                        <div class="special_description">
+                            <h5 class="special_description__header">Description</h5>
+                            <div class="special_description__text">Cast Aluminum Outdoor Chaise Lounge As an elegant and
+                                classic touch to your outdoor space,
+                                this cast Aluminum Chaise Lounge combines the appearance, function and quality all
+                                together,
+                                offering you with the best experience.</div>
+                            <details>
+                                <summary><span class="special_description__button">See More <img
+                                            src="assets/images/special/down_arrow.png" class="sign" /></span></summary>
+                                <p class="special_description__extra_text">Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                    irure
+                                    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                    pariatur.
+                                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                                    mollit anim id est laborum.</p>
+                            </details>
                         </div>
-                        <div class="special_product__card">
-                            <img src="assets/images//special/image2.png" class="special_product__image" />
-                            <div class="special_product_card__description">
-                                <div class="special_product_card__name">Living Room Family Set<span>$229.99</span></div>
-                                <div class="special_product_card__rating">stars</div>
-                                <div class="special_product_card__link">See Details</div>
+                        <div class="special_product__cards">
+                            <div class="special_product__card">
+                                <img src="assets/images//special/image1.png" class="special_product__image" />
+                                <div class="special_product_card__description__active">
+                                    <div class="special_product_card__name">Living Room Family Set<span>$229.99</span>
+                                    </div>
+                                    <div class="special_product_card__rating">stars</div>
+                                    <div class="special_product_card__link">See Details</div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="special_product__card">
-                            <img src="assets/images//special/image3.png" class="special_product__image" />
-                            <div class="special_product_card__description">
-                                <div class="special_product_card__name">Living Room Family Set<span>$229.99</span></div>
-                                <div class="special_product_card__rating">stars</div>
-                                <div class="special_product_card__link">See Details</div>
+                            <div class="special_product__card">
+                                <img src="assets/images//special/image2.png" class="special_product__image" />
+                                <div class="special_product_card__description">
+                                    <div class="special_product_card__name">Living Room Family Set<span>$229.99</span>
+                                    </div>
+                                    <div class="special_product_card__rating">stars</div>
+                                    <div class="special_product_card__link">See Details</div>
+                                </div>
+                            </div>
+                            <div class="special_product__card">
+                                <img src="assets/images//special/image3.png" class="special_product__image" />
+                                <div class="special_product_card__description">
+                                    <div class="special_product_card__name">Living Room Family Set<span>$229.99</span>
+                                    </div>
+                                    <div class="special_product_card__rating">stars</div>
+                                    <div class="special_product_card__link">See Details</div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="benefitsContainer">
-            <h2 id="benefits">Benefits for your expediency</h2>
-            <div class="benefitsRows">
-                <div class="benefitsOneCol"><img src="assets/images/benefits/payment.png" alt="icon" />
-                    <div class="benefitsHeader">Payment Method</div>
-                    <div class="benefitsText">We offer flexible payment
-                        options, to make easier.</div>
-                </div>
-                <div class="benefitsOneCol"><img src="assets/images/benefits/returnpolicy.png" alt="icon" />
-                    <div class="benefitsHeader">Return policy</div>
-                    <div class="benefitsText">You can return a product
-                        within 30 days.</div>
-                </div>
-                <div class="benefitsOneCol"><img src="assets/images/benefits/support.png" alt="icon" />
-                    <div class="benefitsHeader">Customer Support</div>
-                    <div class="benefitsText">Our customer support
-                        is 24/7.</div>
+        <section class="benefits">
+            <div class="benefits_rows">
+                <h2 id="benefits">Benefits for your expediency</h2>
+                <div class="benefits_cols">
+                    <div class="benefitsOneCol"><img src="assets/images/benefits/payment.png" alt="icon" />
+                        <div class="benefitsHeader">Payment Method</div>
+                        <div class="benefitsText">We offer flexible payment
+                            options, to make easier.</div>
+                    </div>
+                    <div class="benefitsOneCol"><img src="assets/images/benefits/returnpolicy.png" alt="icon" />
+                        <div class="benefitsHeader">Return policy</div>
+                        <div class="benefitsText">You can return a product
+                            within 30 days.</div>
+                    </div>
+                    <div class="benefitsOneCol"><img src="assets/images/benefits/support.png" alt="icon" />
+                        <div class="benefitsHeader">Customer Support</div>
+                        <div class="benefitsText">Our customer support
+                            is 24/7.</div>
+                    </div>
                 </div>
             </div>
             </div>
         </section>
         <section class="testimonials">
-            <div class="testimonialsHeading">
+            <div class="testimonials_rows">
+                <div class="testimonials_header">
                 <h2>Testimonials</h2>
                 <h3>Over 15,000 happy customers.</h3>
-            </div>
             <!-- <div class="slider">
                 <div class="sliderList">
                     <div class="sliderTrack">
@@ -245,7 +284,7 @@
                         src="assets/images/testimonials/btnNext.png" class="btnNext" alt="button" /></div>
                 </div>
             </div> -->
-
+</div>
 
             <div class="testimonialsBlock"><img src="assets/images/testimonials/testimonials.png"
                     class="testimonialsImg" alt="photo" />
@@ -257,10 +296,11 @@
                     <div class="testimonialsPerson">Leona Paul</div>
                     <div class="testimonialsPosition">CEO of Floatcom</div>
                 </div>
-                <div class="testimonialsBtns"><img src="assets/images/testimonials/button_previous.png" class="btnPrevious"
-                        alt="button" /> <img src="assets/images/testimonials/button_next.png" class="btnNext"
-                        alt="button" /></div>
+                <div class="testimonialsBtns"><img src="assets/images/testimonials/button_previous.png"
+                        class="btnPrevious" alt="button" /> <img src="assets/images/testimonials/button_next.png"
+                        class="btnNext" alt="button" /></div>
             </div>
+        </div>
         </section>
         <section class="newsletter">
             <div class="image"><img src="assets/images/subscribe/newsletters.png" /></div>
@@ -278,11 +318,16 @@
                         <div class="firstCol">
                             <div class="footerLogo"><img src="assets/images/footer/logo.svg" /></div>
                             <div class="social">
-                                <a href="https://www.facebook.com/?locale=ru_RU" target="_blank"><img src="assets/images/footer/facebook.png" /></a>
-                                <a href="https://www.instagram.com/" target="_blank"><img src="assets/images/footer/instagram.png" /></a>
-                                <a href="https://ru.linkedin.com/" target="_blank"><img src="assets/images/footer/linkedin.png" /></a>
-                                <a href="https://dribbble.com/" target="_blank"><img src="assets/images/footer/dribble.png" /></a>
-                                <a href="https://twitter.com/?lang=ru" target="_blank"><img src="assets/images/footer/twitter.png" /></a>
+                                <a href="https://www.facebook.com/?locale=ru_RU" target="_blank"><img
+                                        src="assets/images/footer/facebook.png" /></a>
+                                <a href="https://www.instagram.com/" target="_blank"><img
+                                        src="assets/images/footer/instagram.png" /></a>
+                                <a href="https://ru.linkedin.com/" target="_blank"><img
+                                        src="assets/images/footer/linkedin.png" /></a>
+                                <a href="https://dribbble.com/" target="_blank"><img
+                                        src="assets/images/footer/dribble.png" /></a>
+                                <a href="https://twitter.com/?lang=ru" target="_blank"><img
+                                        src="assets/images/footer/twitter.png" /></a>
                             </div>
                             <div class="oneCol">
                                 <div class="oneColHead">Address</div>
@@ -323,6 +368,7 @@
         <div id="arrowTop" class="scroll_to_top_button"><a href="#home">TOP</a></div>
     </main>
     <script src="./scripts/index.js"></script>
+    <script src="./scripts/explore.js"></script>
 </body>
 
 </html>

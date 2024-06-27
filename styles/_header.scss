@@ -1,16 +1,15 @@
 .header {
     height: 1080px;
-    width: 100%;
     background: url("../assets/images/header/banner.png") no-repeat;
     background-size: cover;
     border-radius: 0 0 62px 62px;
+    padding: 0 150px 100px 150px;
 }
 
 .topline {
     display: flex;
     justify-content: space-between;
     padding: 26px 150px 26px 150px;
-    margin-bottom: 290px;
 }
 
 .menu {
@@ -34,6 +33,7 @@
     height: 392px;
     justify-content: space-between;
     padding: 26px 150px;
+    margin-top: 300px;
 
     h1,
     h2 {
@@ -62,7 +62,6 @@
     button {
         @include greenButton;
         width: 230px;
-        height: 80px;
         padding: 20px;
         border: none;
         font-size: 24px;

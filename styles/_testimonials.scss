@@ -1,17 +1,17 @@
 .testimonials {
-  height: 889px;
-  padding: 100px 150px 100px 150px;
+  padding: 100px 150px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.testimonialsHeading {
+.testimonials_header {
   text-align: center;
+  margin-bottom: 107px;
 
   h2 {
     @include subtitle;
-    margin-bottom: 32px;
+    margin-bottom: 35px;
   }
 
   h3 {
@@ -90,11 +90,11 @@
 //   &:hover {
 //       background-color: $color-button-next-active;
 //     }
-  
+
 //     &:active {
 //       background-color: $color-button-next-active;
 //     }
-  
+
 //     &:focus {
 //       outline: none;
 //     }
@@ -110,11 +110,11 @@
 //   &:hover {
 //       background-color: $color-button-prev-active;
 //     }
-  
+
 //     &:active {
 //       background-color: $color-button-prev-active;
 //     }
-  
+
 //     &:focus {
 //       outline: none;
 //     }

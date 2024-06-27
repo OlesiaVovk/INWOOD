@@ -1,16 +1,15 @@
-.specialPackage {
-  height: 1165px;
-  padding: 100px 150px 100px 150px;
+.special_package {
+  padding: 100px 150px;
 }
 
-h2 {
-  @include subtitle;
-  margin-bottom: 32px;
-  text-align: center;
+.special_rows {
+  h2 {
+    @include subtitle;
+    margin-bottom: 103px;
+  }
 }
 
-.specialCols {
-  height: 80%;
+.special_cols {
   display: flex;
 }
 
@@ -44,8 +43,8 @@ h2 {
 
 .specialZoomOut {
   position: absolute;
-  bottom: 1px;
-  right: 1px;
+  bottom: 3px;
+  right: 3px;
 }
 
 .specialPrice {
@@ -76,6 +75,7 @@ h2 {
   font-size: 24px;
   line-height: 27px;
   color: $color-primary-darkgreen;
+  margin: 0;
 }
 
 .special_description__text,
@@ -93,10 +93,6 @@ h2 {
   font-weight: 600;
   font-size: 18px;
   line-height: 20px;
-}
-
-.special_product__cards {
-  height: 100%;
 }
 
 .special_product__card {

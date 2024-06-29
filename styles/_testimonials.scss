@@ -25,6 +25,8 @@
 
 .testimonialsBlock {
   display: flex;
+  width: 1620px;
+  margin: 100px;
 }
 
 .testimonialsText {
@@ -34,9 +36,15 @@
   font-size: 36px;
   line-height: 49.03px;
   text-align: left;
-  margin: 50px 100px;
-  width: 90vw;
+  word-wrap: break-word;
+  margin: 0 50px;
+  display: flex;
+  flex-direction: column;
+justify-content: space-around;
+}
 
+.testimonialsRewiew {
+  padding-right: 100px;
 }
 
 .testimonialsPerson {
@@ -54,30 +62,27 @@
   line-height: 28.13px;
 }
 
-.testimonialsBtns {
-  display: flex;
-  flex-direction: column;
-  height: 104px;
-  justify-content: space-between;
-}
-
 .testimonials_gallery {
   margin: 0 auto;
   overflow-x: hidden;
   max-width: 1620px;
-}
-
-.testimonials_gallery_list {
-  padding: 100px;
+  position: relative;
 }
 
 .testimonials_gallery_track {
   display: flex;
+  width: fit-content;
 }
 
-.testimonials_gallery_slide {
-width: 100%;
-padding-right: 200px;
+.testimonials_gallery_arrows {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  position: absolute;
+  right: 0;
+  top: 25%;
 }
 
 .testimonials_gallery_btnNext {
@@ -87,7 +92,6 @@ padding-right: 200px;
   height: 40px;
   border-radius: 50%;
   border: none;
-  margin-left: 24px;
   &:hover {
     background-color: $color-button-next-active;
   }

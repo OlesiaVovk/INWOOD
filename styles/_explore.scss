@@ -1,8 +1,10 @@
 .explore {
   padding: 100px 150px;
+
 }
 
 .explore_rows {
+
   h2 {
     @include subtitle;
     margin-bottom: 99px;
@@ -10,12 +12,12 @@
 }
 
 .explore_container {
+  margin: 0 auto;
+  width: 100%;
   display: flex;
-  justify-content: space-between;
 }
 
 .explore_container_left {
-  //   outline: 1px solid rgb(17, 255, 0);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -52,7 +54,6 @@
   overflow-y: scroll;
   scrollbar-width: thin;
   scrollbar-color: $color-primary-lightgreen $color-primary-darkgreen;
-  // outline: 1px solid rgb(230, 22, 22);
 }
 
 .explore_categories_list {
@@ -69,6 +70,10 @@
   font-size: 24px;
   line-height: 28.13px;
   color: $color-primary-darkgreen;
+  cursor: pointer;
+  &:hover {
+    font-weight: 600;
+  }
 }
 
 .explore_left_button {
@@ -80,27 +85,6 @@
   img {
     margin-top: 3px;
   }
-}
-
-.explore_container_right {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-
-  img {
-    width: 589px;
-    height: 321px;
-    &:hover {
-      filter: grayscale(1);
-    }
-  }
-}
-
-.explore_top,
-.explore_middle,
-.explore_bottom {
-  display: flex;
-  justify-content: space-between;
 }
 
 .explore_opened {
@@ -130,4 +114,17 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 24.51px;
+}
+
+.explore_container_right {
+  margin-left: 60px;
+  display: flex;
+  img {
+    width: 589px;
+    height: 321px;
+    margin: 0 26px 32px 0;
+    &:hover {
+      filter: grayscale(1);
+    }
+  }
 }
